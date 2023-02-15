@@ -26,14 +26,14 @@ public class M5_Practica2_Calculadora {
 
             String numero1;
             do {
-                System.out.println("\n Introdueix el primer numero. ");
+                System.out.println("\n Introdueix el primer numero: ");
                 numero1 = sc.nextLine();
             } while (!numero1.matches("[+-]?[\\d]*[.]?[\\d]+"));
             double nume1 = Double.parseDouble(numero1);
             double n1 = new Double(numero1);
 
             do {
-                System.out.println("\n Operació? (Indica el signe)");
+                System.out.println("\n Operació: (Indica el signe)");
                 System.out.println("+ = sumar \n - = restar \n"
                         + " x = multiplicar \n / = dividir \n * = elevar primer num al segon num."
                         + "\n % = residu");
@@ -49,7 +49,7 @@ public class M5_Practica2_Calculadora {
 
             String numero2;
             do {
-                System.out.println("\n Introdueix el segon numero.");
+                System.out.println("\n Introdueix el segon numero: ");
                 numero2 = sc.nextLine();
             } while (!numero2.matches("[+-]?[\\d]*[.]?[\\d]+"));
             double nume2 = Double.parseDouble(numero2);
@@ -99,7 +99,7 @@ public class M5_Practica2_Calculadora {
             } while (comprobar != true);
 
             System.out.println("(" + numero1 + ") " + operacion + " (" + numero2 + ")" + " = " + res);
-            System.out.println("\n Vols continuar operant? \n");
+            System.out.println("\nVols continuar operant? \n");
             System.out.println(" [s/n]");
             do {
                 comprobar = true;
@@ -112,7 +112,7 @@ public class M5_Practica2_Calculadora {
                     case "N":
                         break;
                     default:
-                        System.err.println("\n Error, posa un valor vàlid. \n");
+                        System.err.println("\nError, posa un valor vàlid. \n");
                         comprobar = false;
                 }
             } while (comprobar != true);
